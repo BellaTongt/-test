@@ -1,0 +1,12 @@
+1spring:
+  application:
+    name: Gateway
+server:
+  port: 9030
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      #注册中心的地址
+      defaultZone: http://server-netflix:8761/eureka/
