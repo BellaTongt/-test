@@ -1,0 +1,17 @@
+server:
+  port: 9030
+spring:
+  application:
+    name: Gateway
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      #注册中心的地址
+      defaultZone: http://192.168.0.187:8761/eureka/
+zuul:
+  routes:
+    hi:
+      path: /hi/**
+      serviceId: http://www.baidu.com

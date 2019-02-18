@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: Oauth2.0
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      #注册中心的地址
+      defaultZone: http://192.168.0.187:8761/eureka/

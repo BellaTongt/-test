@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: Config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/BellaTongt/-test.git
+          username: BellaTongt
+          password: ==..gt1013
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      #注册中心的地址
+      defaultZone: http://192.168.0.187:8761/eureka/
